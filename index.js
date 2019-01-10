@@ -3,10 +3,11 @@ function takeANumber(line, name){
   return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
 
-function takeANumberTwo(line, name){
-  var lineNum = 1;
+var lineNum = 0;
+
+function takeANumberTwo(name){
   line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.`;
+  return `Welcome, ${name}. You are number ${lineNum++} in line.`;
 }
 
 function nowServing(line){
